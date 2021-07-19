@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+   
+ <style>
+* { margin: 0 }
+
+body { overflow-x: hidden }
+
+.container {
+	--n: 1;
+	display: flex;
+	/*align-items: center;*/
+	/*overflow-y: hidden;*/
+	height: 100%;
+	width: 100%; 
+	width: calc(var(--n)*100%);
+	/*height: 50vw; */
+
+	/*max-height: 100vh;*/
+	transform: translate(calc(var(--tx, 0px) + var(--i, 0)/var(--n)*-100%));
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    width: calc(100%/var(--n));
+    max-width: 100vw;
+    user-select: none;
+    pointer-events: none
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.smooth { transition: transform calc(var(--f, 1)*.5s) cubic-bezier(1, 1.59, .61, .74) }
+
+</style>
+
+</head>
+<body>
+<div class="container">
+	<img src="photos/small/IMG_3826-Edit-Edit-2.jpg" class="image">
+	<img src="photos/small/IMG_3158-Edit-2.jpg" class="image">
+	<img src="photos/small/IMG_2231-Edit-Edit.jpg" class="image">
+	<img src="photos/small/IMG_2802.jpg" class="image">
+	<img src="photos/small/IMG_4339.jpg" class="image">
+	<img src="photos/small/IMG_2675-Edit.jpg" class="image">
+	<img src="photos/small/IMG_4959-Edit.jpg" class="image">
+	<img src="photos/small/IMG_3310-Edit.jpg" class="image">
+	<img src="photos/small/IMG_2112-Edit.jpg" class="image">
+	<img src="photos/small/IMG_3682-Edit-3.jpg" class="image">
+	<img src="photos/small/IMG_3376-Edit.jpg" class="image">
+	<img src="photos/small/IMG_3802-Edit-2.jpg" class="image">
+	<img src="photos/small/IMG_4676-Edit.jpg" class="image">
+	<img src="photos/small/IMG_4513-Edit.jpg" class="image">
+	<img src="photos/small/IMG_4688-Edit.jpg" class="image">
+	<img src="photos/small/IMG_2600-Edit-2.jpg" class="image">
+	<img src="photos/small/IMG_3136-Edit-Edit.jpg" class="image">
+	<img src="photos/small/IMG_3668.jpg" class="image">
+	<img src="photos/small/IMG_3591-Edit-Edit.jpg" class="image">
+	<img src="photos/small/IMG_2726.jpg" class="image">
+	<img src="photos/small/IMG_2123-Edit-2.jpg" class="image">
+	<img src="photos/small/IMG_0237-Edit-2-Edit-3.jpg" class="image">
+	<img src="photos/small/IMG_2450-Edit.jpg" class="image">
+	<img src="photos/small/IMG_2552-Edit-Edit.jpg" class="image">
+	<img src="photos/small/IMG_2740-Edit.jpg" class="image">
+	<img src="photos/small/IMG_3043-Edit-2-Edit.jpg" class="image">
+	<img src="photos/small/IMG_0905.jpg" class="image">
+	<img src="photos/small/IMG_2131-Edit.jpg" class="image">
+	<img src="photos/small/IMG_0885.jpg" class="image">
+	<img src="photos/small/IMG_3610-Edit-2.jpg" class="image">
+	<img src="photos/small/IMG_2770.jpg" class="image">
+	<img src="photos/small/IMG_0838.jpg" class="image">
+	<img src="photos/small/IMG_0773.jpg" class="image">
+	<img src="photos/small/IMG_0689.jpg" class="image">
+</div>
+
+
+
+<script>
+const _C = document.querySelector('.container'), 
+      N = _C.children.length;
+
+ console.log(_C + " " + N);
+
+let i = 0, x0 = null, locked = false, w;
+
+function unify(e) {	
+	console.log("unify");
+	return e.changedTouches ? e.changedTouches[0] : e 
+};
+
+function lock(e) {
+	console.log("lock");
+  x0 = unify(e).clientX;
+	_C.classList.toggle('smooth', !(locked = true))
+};
+
+function drag(e) {
+	console.log("drag");
+	e.preventDefault();
+	
+	if(locked) 		
+		_C.style.setProperty('--tx', `${Math.round(unify(e).clientX - x0)}px`)
+};
+
+function move(e) {
+  console.log("move");
+  if(locked) {
+    let dx = unify(e).clientX - x0, s = Math.sign(dx), 
+				f = +(s*dx/w).toFixed(2);
+
+    if((i > 0 || s < 0) && (i < N - 1 || s > 0) && f > .2) {
+			_C.style.setProperty('--i', i -= s);
+			f = 1 - f
+		}
+		
+    _C.style.setProperty('--tx', '0px');
+		_C.style.setProperty('--f', f);
+    _C.classList.toggle('smooth', !(locked = false));
+    x0 = null
+  }
+};
+
+function size() { w = window.innerWidth };
+
+size();
+_C.style.setProperty('--n', N);
+
+addEventListener('resize', size, false);
+
+_C.addEventListener('mousedown', lock, false);
+_C.addEventListener('touchstart', lock, false);
+
+_C.addEventListener('mousemove', drag, false);
+_C.addEventListener('touchmove', drag, false);
+
+_C.addEventListener('mouseup', move, false);
+_C.addEventListener('touchend', move, false);
+</script>
+
+</body>
+
+</html>

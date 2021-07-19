@@ -1,0 +1,326 @@
+[
+  {
+    "name": "slenderman in motion",
+    "title": "IMG_3826-Edit-Edit-2.jpg",
+    "date": "1/26/15",
+    "time": "10:24 PM",
+    "shutterSpeed": 30,
+    "aperture": 8,
+    "iso": 100
+  },
+  {
+    "name": "voyage",
+    "title": "IMG_3158-Edit-2.jpg",
+    "date": "1/6/15",
+    "time": "6:36 PM",
+    "shutterSpeed": "1/100",
+    "aperture": 5.6,
+    "iso": 400
+  },
+  {
+    "name": "ALWAYS FLY WITH A CAMERA",
+    "title": "IMG_2231-Edit-Edit.jpg",
+    "date": "8/21/14",
+    "time": "8:50 AM",
+    "shutterSpeed": "1/250",
+    "aperture": 20,
+    "iso": 100
+  },
+  {
+    "name": "ALWAYS FLY WITH A CAMERA II",
+    "title": "IMG_2802.jpg",
+    "date": "12/18/14",
+    "time": "3:26 PM",
+    "shutterSpeed": "1/250",
+    "aperture": 14,
+    "iso": 100
+  },
+  {
+    "name": "unedited",
+    "title": "IMG_4339.jpg",
+    "date": "4/19/15",
+    "time": "7:01 AM",
+    "shutterSpeed": "1/320",
+    "aperture": 13,
+    "iso": 100
+  },
+  {
+    "name": "edited",
+    "title": "IMG_2675-Edit.jpg",
+    "date": "11/6/14",
+    "time": "9:54 PM",
+    "shutterSpeed": "1/60",
+    "aperture": 13,
+    "iso": 100
+  },
+  {
+    "name": "enchanted",
+    "title": "IMG_4959-Edit.jpg",
+    "date": "4/25/15",
+    "time": "7:44 AM",
+    "shutterSpeed": 2.5,
+    "aperture": 14,
+    "iso": 100
+  },
+  {
+    "name": "pacifica CA",
+    "title": "IMG_1900.jpg",
+    "date": "1/8/15",
+    "time": "5:31 PM",
+    "shutterSpeed": "1/20",
+    "aperture": 22,
+    "iso": 100
+  },
+  {
+    "name": "pacifica CA II",
+    "title": "IMG_2112-Edit.jpg",
+    "date": "8/11/14",
+    "time": "8:07 PM",
+    "shutterSpeed": "1/2",
+    "aperture": 22,
+    "iso": 100
+  },
+  {
+    "name": "pacifica CA III",
+    "title": "IMG_3682-Edit-2.jpg",
+    "date": "1/14/15",
+    "time": "6:52 PM",
+    "shutterSpeed": 30,
+    "aperture": 14,
+    "iso": 100
+  },
+  {
+    "name": "pacifica CA IV",
+    "title": "IMG_3376-Edit.jpg",
+    "date": "1/8/15",
+    "time": "5:53 PM",
+    "shutterSpeed": "1/100",
+    "aperture": 11,
+    "iso": 200
+  },
+  {
+    "name": "pacifica CA V",
+    "title": "IMG_3802-Edit-2.jpg",
+    "date": "1/16/15",
+    "time": "6:53 PM",
+    "shutterSpeed": 1.3,
+    "aperture": 11,
+    "iso": 200
+  },
+  {
+    "name": "portlandia",
+    "title": "IMG_4676-Edit.jpg",
+    "date": "4/22/15",
+    "time": "7:12 AM",
+    "shutterSpeed": "1/4",
+    "aperture": 16,
+    "iso": 100
+  },
+  {
+    "name": "portlandia II",
+    "title": "IMG_4513-Edit.jpg",
+    "date": "4/22/15",
+    "time": "6:44 AM",
+    "shutterSpeed": "1/15",
+    "aperture": 13,
+    "iso": 100
+  },
+  {
+    "name": "portlandia III",
+    "title": "IMG_4688-Edit.jpg",
+    "date": "4/25/15",
+    "time": "6:46 AM",
+    "shutterSpeed": 0.3,
+    "aperture": 14,
+    "iso": 100
+  },
+  {
+    "name": "portlandia IV",
+    "title": "IMG_2600-Edit-2.jpg",
+    "date": "10/26/14",
+    "time": "12:29 PM",
+    "shutterSpeed": "1/80",
+    "aperture": 11,
+    "iso": 100
+  },
+  {
+    "name": "pelican rock",
+    "title": "IMG_3136-Edit-Edit.jpg",
+    "date": "1/6/15",
+    "time": "5:51 PM",
+    "shutterSpeed": "1/640",
+    "aperture": 5.6,
+    "iso": 100
+  },
+  {
+    "name": "rwb",
+    "title": "IMG_3668.jpg",
+    "date": "1/14/15",
+    "time": "6:31 PM",
+    "shutterSpeed": "1/2",
+    "aperture": 22,
+    "iso": 100
+  },
+  {
+    "name": "marsssh",
+    "title": "IMG_3591-Edit-Edit.jpg",
+    "date": "1/9/15",
+    "time": "6:14 PM",
+    "shutterSpeed": "1/8",
+    "aperture": 22,
+    "iso": 100
+  },
+  {
+    "name": "pier beauty",
+    "title": "IMG_2123-Edit-2.jpg",
+    "date": "8/11/14",
+    "time": "8:25 PM",
+    "shutterSpeed": 1.3,
+    "aperture": 22,
+    "iso": 100
+  },
+  {
+    "name": "rock",
+    "title": "IMG_2726.jpg",
+    "date": "2/25/17",
+    "time": "6:57 PM",
+    "shutterSpeed": "1/5",
+    "aperture": 22,
+    "iso": 100
+  },
+  {
+    "name": "planet granite",
+    "title": "IMG_0237-Edit-2-Edit-3.jpg",
+    "date": "7/17/15",
+    "time": "8:35 PM",
+    "shutterSpeed": 0.8,
+    "aperture": 22,
+    "iso": 100
+  },
+  {
+    "name": "manor house",
+    "title": "IMG_2450-Edit.jpg",
+    "date": "9/7/14",
+    "time": "3:55 AM",
+    "shutterSpeed": 30,
+    "aperture": 8,
+    "iso": 100
+  },
+  {
+    "name": "corbett house",
+    "title": "10/8/14",
+    "date": "2:04 AM",
+    "time": 13,
+    "shutterSpeed": 7.1,
+    "aperture": 400,
+    "iso": ""
+  },
+  {
+    "name": "zombie tree",
+    "title": "11/30/14",
+    "date": "6:07 PM",
+    "time": "1/4",
+    "shutterSpeed": 16,
+    "aperture": 100,
+    "iso": ""
+  },
+  {
+    "name": "golden gate",
+    "title": "IMG_3043-Edit-2-Edit.jpg",
+    "date": "1/3/15",
+    "time": "6:57 PM",
+    "shutterSpeed": 30,
+    "aperture": 10,
+    "iso": 400
+  },
+  {
+    "name": "the sculptor",
+    "title": "IMG_0905.jpg",
+    "date": "8/5/14",
+    "time": "2:31 PM",
+    "shutterSpeed": "1/80",
+    "aperture": 5.6,
+    "iso": 400
+  },
+  {
+    "name": "nightfisher",
+    "title": "IMG_2131-Edit.jpg",
+    "date": "8/11/14",
+    "time": "8:33 PM",
+    "shutterSpeed": "1/13",
+    "aperture": 4.5,
+    "iso": 400
+  },
+  {
+    "name": "flower",
+    "title": "IMG_0885.jpg",
+    "date": "6/7/16",
+    "time": "6:02 PM",
+    "shutterSpeed": "1/160",
+    "aperture": 5.6,
+    "iso": 100
+  },
+  {
+    "name": "swirl",
+    "title": "IMG_3610-Edit-2.jpg",
+    "date": "1/9/15",
+    "time": "7:20 PM",
+    "shutterSpeed": 13,
+    "aperture": 3.5,
+    "iso": 1600
+  },
+  {
+    "name": "yellow",
+    "title": "IMG_2770.jpg",
+    "date": "3/2/17",
+    "time": "3:52 PM",
+    "shutterSpeed": "1/50",
+    "aperture": 5.6,
+    "iso": 400
+  },
+  {
+    "name": "all we need",
+    "title": "IMG_0838.jpg",
+    "date": "5/31/16",
+    "time": "1:55 AM",
+    "shutterSpeed": "1/8",
+    "aperture": 8,
+    "iso": 100
+  },
+  {
+    "name": "cards",
+    "title": "IMG_0773.jpg",
+    "date": "6/3/14",
+    "time": "2:08 PM",
+    "shutterSpeed": "1/20",
+    "aperture": 1.8,
+    "iso": 100
+  },
+  {
+    "name": "spoon",
+    "title": "IMG_0689.jpg",
+    "date": "6/1/14",
+    "time": "9:00 PM",
+    "shutterSpeed": "1/13",
+    "aperture": 2.5,
+    "iso": 100
+  },
+  {
+    "name": "avery",
+    "title": "IMG_0546.jpg",
+    "date": "4/29/14",
+    "time": "11:35 AM",
+    "shutterSpeed": "1/250",
+    "aperture": 5.6,
+    "iso": 100
+  },
+  {
+    "name": "lens",
+    "title": "IMG_0828.jpg",
+    "date": "6/3/14",
+    "time": "3:07 PM",
+    "shutterSpeed": "1/200",
+    "aperture": 1.8,
+    "iso": 100
+  }
+]

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+    <title>lars.photos</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
+    <link rel="shortcut icon" href="photos/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div id="banner" class="opaque-box banner">
+    <p>
+        <h1>
+            lars.photos
+        </h1>
+    </p>
+</div>
+
+<!-- Container for swipe view - main fullscreen image thing. -->
+<div class="container smooth"></div>
+
+<div id="page"> 
+
+    <!-- <div class="site-banner">photogrpahyt by lars mayrand</div> -->
+    
+    <div class="title-position">
+        <div id="title" class="opaque-box title large-text"></div>    
+        <div class="transparent-box"></div>
+        <div id="metadata" class="outline-text metadata small-text"></div>
+
+        <!-- <p class="small_text raised">Scroll</p> -->
+        <!-- <a href="#grid-view"class="outline-text medium-text rotate relative">&#8250;</a> -->
+        <button class="outline-text medium-text rotate relative">&#8250;</button>
+        <!-- button should animate scroll to grid view -->
+    </div>
+
+    <div class="left-arrow">
+        <button title="previous" class="outline-text medium-text" onclick="previous()">&#8249;</button> 
+        <!-- <p class="small_text">Swipe</p> -->
+    </div>
+    
+    <div class="right-arrow">
+        <button title="next" class="outline-text medium-text" onclick="next()">&#8250;</button>
+        <!-- <p class="small_text">Swipe</p> -->
+    </div>    
+</div>     
+
+<!-- <div id="grid-view" class="row">
+    <div id="column_0" class="column"></div>
+    <div id="column_1" class="column"></div>
+    <div id="column_2" class="column"></div>
+</div> -->
+
+
+<div class="row">
+    <div class="column">
+      <img src="1080_wide/IMG_2552-Edit.jpg" alt="Snow" class='row_test_1' id="img1">
+    </div>
+    <div class="column">
+      <img src="1080_wide/IMG_4688-Edit.jpg" alt="Forest" class='row_test_1'>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+      <img src="1080_wide/IMG_0237-Edit-2-Edit-3.jpg" alt="Snow" class='row_test_1'>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <img src="1080_wide/IMG_3136-Edit-Edit.jpg" alt="Mountains" class='row_test'>
+      </div>
+    <div class="column">
+      <img src="1080_wide/IMG_3310-Edit.jpg" alt="Forest" class='row_test'>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <img src="1080_wide/IMG_3682-Edit-3.jpg" alt="Mountains" class='row_test'>
+      </div>
+    <div class="column">
+      <img src="1080_wide/IMG_3043-Edit-2-Edit.jpg" alt="Forest" class='row_test'>
+    </div>
+</div>
+
+<!-- <div id="grid-view" class="row">
+    <div id="row_0" class="row"></div>
+    <div id="row_1" class="row"></div>
+    <div id="row_2" class="row"></div>
+</div> -->
+
+<footer>
+    <ul> 
+        <li>
+            <a class="drop-shadow" href="mailto:mayrand.lars@Gmail.com">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
+        <li>
+            <a id="500px" class="drop-shadow" href="https://500px.com/larsmayrand" target="_blank">
+                <i class="fa fa-500px fa-2x"></i>
+            </a>
+        </li>
+        <li>
+            <a id="github" class="drop-shadow" href="https://github.com/larsPhotos/larsPhotos.github.io" target="_blank">
+                <i class="fa fa-github fa-2x"></i>
+            </a>
+        </li>
+        <li>
+            <a class="drop-shadow" href="https://instagram.com/larsmayrand" target="_blank">
+                <i class="fa fa-instagram fa-2x"></i>
+            </a>
+        </li>
+        <li class="text small-text">
+            <i class="fa fa-copyright" aria-hidden="true"></i>
+            Lars Mayrand 2020
+        </li>
+    </ul>
+</footer>
+
+<script src="main.js"></script>
+<script src="vendors/exif-js/exif-js"></script>
+
+</body>
+</html>
