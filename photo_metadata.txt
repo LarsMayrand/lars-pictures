@@ -1,6 +1,6 @@
 [
   {
-    "title": "Slenderman In Motion",
+    "title": "slenderman in motion",
     "useTitle": true,
     "file": "IMG_3826-Edit-Edit-2.jpg",
     "date": "2015-01-26T22:24",
@@ -144,7 +144,7 @@
     "iso": 100
   },
   {
-    "title": "Pelican Rock",
+    "title": "pelican rock",
     "useTitle": true,
     "file": "IMG_3136-Edit-Edit.jpg",
     "date": "2015-01-06T17:51",
@@ -180,7 +180,7 @@
     "iso": 100
   },
   {
-    "title": "Pier Beauty",
+    "title": "pier beauty",
     "useTitle": true,
     "file": "IMG_2123-Edit-2.jpg",
     "date": "2014-08-11T20:25",
@@ -189,7 +189,7 @@
     "iso": 100
   },
   {
-    "title": "Granite Planet",
+    "title": "planet granite",
     "useTitle": true,
     "file": "IMG_0237-Edit-2-Edit-3.jpg",
     "date": "2015-07-17T20:35",
@@ -198,7 +198,7 @@
     "iso": 100
   },
   {
-    "title": "Manor House",
+    "title": "manor house",
     "useTitle": true,
     "file": "IMG_2450-Edit.jpg",
     "date": "2014-09-07T03:55",
@@ -207,7 +207,7 @@
     "iso": 100
   },
   {
-    "title": "Corbett House",
+    "title": "corbett house",
     "useTitle": true,
     "file": "IMG_2552-Edit-Edit.jpg",
     "date": "2014-10-08T02:04",
@@ -216,7 +216,7 @@
     "iso": 400
   },
   {
-    "title": "Zombie Tree",
+    "title": "zombie tree",
     "useTitle": true,
     "file": "IMG_2740-Edit.jpg",
     "date": "2014-11-30T18:07",
@@ -225,7 +225,7 @@
     "iso": 100
   },
   {
-    "title": "Golden Gate",
+    "title": "golden gate",
     "useTitle": false,
     "file": "IMG_3043-Edit-2-Edit.jpg",
     "date": "2015-01-03T18:57",
@@ -252,7 +252,7 @@
     "iso": 400
   },
   {
-    "title": "All We Need",
+    "title": "all we need",
     "useTitle": true,
     "file": "IMG_0885.jpg",
     "date": "2016-06-07T18:02",
@@ -307,7 +307,7 @@
   },
 
   {
-     "title": "The Sculptor",
+     "title": "the sculptor",
      "useTitle": true,
      "file": "IMG_1900.jpg",
      "date": "2014-08-05T14:31",

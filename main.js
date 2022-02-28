@@ -1,60 +1,27 @@
 /*
 
+test
+bugs: 
 
-step 1
+make it faster
+a single tap locks for some reason.. . 
 
-- rows not columns
-- use static elements, no requests   DONE
-- padding 
-- onclick
-- populate exif data 
-- different grid view
-    - row first not columns
-    - variable row height
-    - photo order matters
-    - 500px is just smart and figures it out
-- make pretty 
-- make faster 
-- read me 
-- shop 
-- share button
-- run on rasberry pi? aws? 
-- 
+mouse hiding stuff
 
+tap to show, tap to hide? 
 
+add readme
 
-how is this row thing going to work... 
-algorithm looks at two photos 
-decides how tall the row should be
-scales photos accordingly 
-
-so how do i make a row with a fixed size? 
-
-so the size should be whatever makes it fit the margins ?
-god damn 500px looks good 
-500px is fking perfect fuk 
-techically i only need a static page... 
-but a dynamic thing that is smart would be way cooler 
-
-MATH
-- given two photos, calculate the height they need to be to fill the the screen horizontally
-- horizontal screen space = window - 2 * edgePadding - betweenPhotosPadding 
-
-
-if photo is super wide, show it by itself 
-
-
-
-on mobile it should be an instagram feed 
-desktop 500px
+shop, fullscreen, share...
 
 */
 
-/** This is a website. */
+// biggest photos: manor hosue, corbett house, portlandia IV, marssh, enchanted
+
 
 // swiping logic, adapted from Ana Tudor: https://css-tricks.com/simple-swipe-with-vanilla-javascript/
 
-// biggest photos: manor hosue, corbett house, portlandia IV, marssh, enchanted
+
 
 // Time in milliseconds till text is hidden
 const WAIT_TIME = 2000;
@@ -65,52 +32,18 @@ const MONTHS = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 
-let mouseTimer = null, cursorVisible = true;
+var mouseTimer = null, cursorVisible = true;
 
-// photos duh
-const photos = [ 'IMG_0237-Edit-2-Edit-3.jpg',
-  'IMG_0689.jpg',
-  'IMG_0773.jpg',
-  'IMG_0828.jpg',
-  'IMG_0838.jpg',
-  'IMG_1900.jpg',
-  'IMG_2231-Edit-Edit.jpg',
-  'IMG_2450-Edit.jpg',
-  'IMG_2552-Edit.jpg',
-  'IMG_2600-Edit-2.jpg',
-  'IMG_2726.jpg',
-  'IMG_3043-Edit-2-Edit.jpg',
-  'IMG_3136-Edit-Edit.jpg',
-  'IMG_3158-Edit-2.jpg',
-  'IMG_3310-Edit.jpg',
-  'IMG_3376-Edit.jpg',
-  'IMG_3591-Edit-Edit.jpg',
-  'IMG_3610-Edit-2-Edit-2.jpg',
-  'IMG_3610-Edit-2.jpg',
-  'IMG_3668.jpg',
-  'IMG_3682-Edit-3.jpg',
-  'IMG_3802-Edit-2-Edit.jpg',
-  'IMG_3826-Edit-Edit-2.jpg',
-  'IMG_4339.jpg',
-  'IMG_4513-Edit.jpg',
-  'IMG_4676-Edit.jpg',
-  'IMG_4688-Edit.jpg',
-  'IMG_4959-Edit.jpg',
-  'edited.jpg',
-  'that_tree.jpg',
-  'yellow.jpg',
-  'zombie_tree.jpg',
-];
+var photos;
 
-// fucking rename these jesus christ 
 let i = 0, x0 = null, y0 = null, mousedown = false, swiping = false, scrolling = false, w;
 
-const container = document.querySelector(".container"),
+var container = document.querySelector(".container"),
     title = document.getElementById("title")
     metadata = document.getElementById("metadata"),
     page = document.getElementById("page");
 
-// loadData();
+loadData();
 loadPhotos();
 mouseMoved();
 showText();
@@ -118,7 +51,7 @@ showText();
 title.innerHTML = formatTitle(photos[i]);
 metadata.innerHTML = formatMetadata(photos[i]);
 
-let N = container.children.length;
+var N = container.children.length;
 container.style.setProperty("--n", N);
 
 function size() { w = window.innerWidth };
@@ -126,44 +59,35 @@ size();
 
 addEventListener("resize", size, false);
 
-// loading grid view 
+
+// load photo data
+function loadData() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            photos = JSON.parse(xmlhttp.responseText); 
+        }
+    };
+    xmlhttp.open("GET", "photo_metadata.txt", false); // synchronous, this should be fine
+    xmlhttp.send();
+}
+    
 function loadPhotos() {
     // populate grid view
-    // const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    // const columns = viewportWidth < 480 ? 1 : 2; 
-    // for (let i = 0; i < columns; i++) {
-    //     const column = document.getElementById("column_" + i);
-    //    for (let j = i; j < photos.length; j += columns) {
-    //         column.innerHTML += `<img src=1080_wide/${photos[j]} class='preview-image' onclick='photo(${j})'>`;
-    //     }    
-    // }    
+    var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var columns = viewportWidth < 480 ? 2 : 3; 
+    for (var i = 0; i < columns; i++) {
+        var column = document.getElementById("column_" + i);
+       for (var j = i; j < photos.length; j += columns) {
+            column.innerHTML += "<img src=photos/small/" + photos[j].file + " class='preview-image' onclick='photo(" + j + ")'>";
+        }    
+    }    
 
     // populate swipe view
-    for (let i = 0; i < photos.length; i++) {
-        container.innerHTML += `<div class='frame'><img src=1080_wide/${photos[i]} class='image'></div>`;
+    for (var i = 0; i < photos.length; i++) {
+        container.innerHTML += "<div class='frame'><img src=photos/small/" + photos[i].file + " class='image'></div>";
     }   
 }
-
-
-getExif();
-
-function getExif() {
-    var img1 = document.getElementById("img1");
-    EXIF.getData(img1, function() {
-        var make = EXIF.getTag(this, "Make");
-        var model = EXIF.getTag(this, "Model");
-        // var makeAndModel = document.getElementById("makeAndModel");
-        // makeAndModel.innerHTML = `${make} ${model}`;
-    });
-
-    // var img2 = document.getElementById("img2");
-    // EXIF.getData(img2, function() {
-    //     var allMetaData = EXIF.getAllTags(this);
-    //     var allMetaDataSpan = document.getElementById("allMetaDataSpan");
-    //     allMetaDataSpan.innerHTML = JSON.stringify(allMetaData, null, "\t");
-    // });
-}
-
 
 
 function formatTitle(photo) {
@@ -171,9 +95,11 @@ function formatTitle(photo) {
 }
 
 function formatMetadata(photo) {
-    const date = new Date(photo.date);
-    const minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-    let time;
+    var date = new Date(photo.date);
+    
+    var time;
+    var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+
     if (date.getHours() == 0) {
         time = "12:" + minutes + " AM";
     } else if (date.getHours() > 12) {
@@ -193,7 +119,6 @@ function update(animate) {
     // }
 
     // container.classList.toggle("smooth", animate);    
-    console.log
     container.style.setProperty("--i", i);
     container.scrollIntoView();
 
@@ -373,4 +298,5 @@ container.addEventListener("touchmove", mouseMoved, false);
 
 container.addEventListener("mouseup", move, false);
 container.addEventListener("touchend", move, false);
+
 
