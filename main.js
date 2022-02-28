@@ -1,27 +1,4 @@
-/*
-
-test
-bugs: 
-
-make it faster
-a single tap locks for some reason.. . 
-
-mouse hiding stuff
-
-tap to show, tap to hide? 
-
-add readme
-
-shop, fullscreen, share...
-
-*/
-
-// biggest photos: manor hosue, corbett house, portlandia IV, marssh, enchanted
-
-
 // swiping logic, adapted from Ana Tudor: https://css-tricks.com/simple-swipe-with-vanilla-javascript/
-
-
 
 // Time in milliseconds till text is hidden
 const WAIT_TIME = 2000;
@@ -150,7 +127,7 @@ function showText() {
     cursorVisible = true;
 }
 
-// handling Internet Explorer stupidity with window.event
+// handling Internet Explorer issue with window.event
 // @see http://stackoverflow.com/a/3985882/517705    
 function checkKeycode(event) {
     window.clearTimeout(mouseTimer);
@@ -213,7 +190,6 @@ function unify(e) {
 // }
 
 function move(e) {
-    // console.log("why isn't it lockeding?? " + locked);
     if (swiping) {
         let dx = unify(e).clientX - x0, 
             // dy = unify(e).clientY - y0,
@@ -280,7 +256,6 @@ function mousePressed(e) {
     x0 = unify(e).clientX;
     y0 = unify(e).clientY;
     // console.log("x0 = " + x0);
-    // console.log("woaowaowa d??????");
 }
 
 // var mousedown;
@@ -298,5 +273,3 @@ container.addEventListener("touchmove", mouseMoved, false);
 
 container.addEventListener("mouseup", move, false);
 container.addEventListener("touchend", move, false);
-
-
