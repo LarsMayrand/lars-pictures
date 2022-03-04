@@ -1,8 +1,8 @@
 [
   {
-    "title": "slenderman in motion",
+    "title": "slender",
     "useTitle": true,
-    "file": "IMG_3826-Edit-Edit-2.jpg",
+    "file": "slender.jpg",
     "date": "2015-01-26T22:24",
     "shutterSpeed": 30,
     "aperture": 8,
@@ -11,7 +11,7 @@
   {
     "title": "voyage",
     "useTitle": true,
-    "file": "IMG_3158-Edit-2.jpg",
+    "file": "voyage.jpg",
     "date": "2015-01-15T18:36",
     "shutterSpeed": "1/100",
     "aperture": 5.6,
@@ -20,7 +20,7 @@
   {
     "title": "ALWAYS FLY WITH A CAMERA",
     "useTitle": true,
-    "file": "IMG_2231-Edit-Edit.jpg",
+    "file": "always_fly_with_a_camera.jpg",
     "date": "2014-08-21T08:50",
     "shutterSpeed": "1/250",
     "aperture": 20,
@@ -29,7 +29,7 @@
   {
     "title": "ALWAYS FLY WITH A CAMERA II",
     "useTitle": true,
-    "file": "IMG_2802.jpg",
+    "file": "always_fly_with_a_camera_II.jpg",
     "date": "2014-12-18T15:26",
     "shutterSpeed": "1/250",
     "aperture": 14,
@@ -38,7 +38,7 @@
   {
     "title": "unedited",
     "useTitle": true,
-    "file": "IMG_4339.jpg",
+    "file": "unedited.jpg",
     "date": "2015-04-19T07:01",
     "shutterSpeed": "1/320",
     "aperture": 13,
@@ -47,7 +47,7 @@
   {
     "title": "edited",
     "useTitle": true,
-    "file": "IMG_2675-Edit.jpg",
+    "file": "edited.jpg",
     "date": "2014-11-06T21:54",
     "shutterSpeed": "1/60",
     "aperture": 13,
@@ -56,25 +56,26 @@
   {
     "title": "enchanted",
     "useTitle": true,
-    "file": "IMG_4959-Edit.jpg",
+    "file": "enchanted.jpg",
     "date": "2015-04-25T07:44",
     "shutterSpeed": 2.5,
     "aperture": 14,
     "iso": 100
   },
   {
-    "title": "pacifica CA",
-    "useTitle": true,
-    "file": "IMG_3310-Edit.jpg",
-    "date": "2015-01-08T17:31",
-    "shutterSpeed": "1/20",
-    "aperture": 22,
-    "iso": 100
+     "title": "the sculptor",
+     "useTitle": true,
+     "file": "sculptor.jpg",
+     "date": "2014-08-05T14:31",
+     "shutterSpeed": "1/80",
+     "aperture": 5.6,
+     "iso": 400
   },
+
   {
     "title": "pacifica CA II",
     "useTitle": true,
-    "file": "IMG_2112-Edit.jpg",
+    "file": "IMG_3668.jpg",
     "date": "2014-08-11T20:07",
     "shutterSpeed": "1/2",
     "aperture": 22,
@@ -83,7 +84,7 @@
   {
     "title": "pacifica CA III",
     "useTitle": true,
-    "file": "IMG_3682-Edit-3.jpg",
+    "file": "pacifica_III.jpg",
     "date": "2015-01-14T18:52",
     "shutterSpeed": 30,
     "aperture": 14,
@@ -92,7 +93,7 @@
   {
     "title": "pacifica CA IV",
     "useTitle": true,
-    "file": "IMG_3376-Edit.jpg",
+    "file": "pacifica_IV.jpg",
     "date": "2015-01-08T17:53",
     "shutterSpeed": "1/100",
     "aperture": 11,
@@ -101,7 +102,16 @@
   {
     "title": "pacifica CA V",
     "useTitle": true,
-    "file": "IMG_3802-Edit-2.jpg",
+    "file": "pacifica_V.jpg",
+    "date": "2015-01-16T18:53",
+    "shutterSpeed": 1.3,
+    "aperture": 11,
+    "iso": 200
+  },
+  {
+    "title": "kt",
+    "useTitle": true,
+    "file": "IMG_5898-Edit.jpg",
     "date": "2015-01-16T18:53",
     "shutterSpeed": 1.3,
     "aperture": 11,
@@ -110,7 +120,7 @@
   {
     "title": "portlandia",
     "useTitle": true,
-    "file": "IMG_4676-Edit.jpg",
+    "file": "portlandia.jpg",
     "date": "2015-04-22T07:12",
     "shutterSpeed": "1/4",
     "aperture": 16,
@@ -119,25 +129,16 @@
   {
     "title": "portlandia II",
     "useTitle": true,
-    "file": "IMG_4513-Edit.jpg",
-    "date": "2015-04-22T06:44",
+    "file": "IMG_2600-Edit.jpg",
+    "date": "portlandia_II.jpg",
     "shutterSpeed": "1/15",
     "aperture": 13,
     "iso": 100
   },
   {
-    "title": "portlandia III",
-    "useTitle": true,
-    "file": "IMG_4688-Edit.jpg",
-    "date": "2015-04-25T06:46",
-    "shutterSpeed": 0.3,
-    "aperture": 14,
-    "iso": 100
-  },
-  {
     "title": "portlandia IV",
     "useTitle": true,
-    "file": "IMG_2600-Edit-2.jpg",
+    "file": "portlandia_IV.jpg",
     "date": "2014-10-26T12:29",
     "shutterSpeed": "1/80",
     "aperture": 11,
@@ -146,7 +147,7 @@
   {
     "title": "pelican rock",
     "useTitle": true,
-    "file": "IMG_3136-Edit-Edit.jpg",
+    "file": "pelican_rock-Edit.jpg",
     "date": "2015-01-06T17:51",
     "shutterSpeed": "1/640",
     "aperture": 5.6,
@@ -164,25 +165,16 @@
   {
     "title": "marsssh",
     "useTitle": true,
-    "file": "IMG_3591-Edit-Edit.jpg",
+    "file": "IMG_3591-Pano.jpg",
     "date": "2015-01-09T18:14",
     "shutterSpeed": "1/8",
     "aperture": 22,
     "iso": 100
   },
   {
-    "title": "rock",
-    "useTitle": false,
-    "file": "IMG_2726.jpg",
-    "date": "2017-02-25T18:57",
-    "shutterSpeed": "1/5",
-    "aperture": 22,
-    "iso": 100
-  },
-  {
     "title": "pier beauty",
     "useTitle": true,
-    "file": "IMG_2123-Edit-2.jpg",
+    "file": "pier_beauty.jpg",
     "date": "2014-08-11T20:25",
     "shutterSpeed": 1.3,
     "aperture": 22,
@@ -198,24 +190,6 @@
     "iso": 100
   },
   {
-    "title": "manor house",
-    "useTitle": true,
-    "file": "IMG_2450-Edit.jpg",
-    "date": "2014-09-07T03:55",
-    "shutterSpeed": 30,
-    "aperture": 8,
-    "iso": 100
-  },
-  {
-    "title": "corbett house",
-    "useTitle": true,
-    "file": "IMG_2552-Edit-Edit.jpg",
-    "date": "2014-10-08T02:04",
-    "shutterSpeed": 13,
-    "aperture": 7.1,
-    "iso": 400
-  },
-  {
     "title": "zombie tree",
     "useTitle": true,
     "file": "IMG_2740-Edit.jpg",
@@ -227,61 +201,97 @@
   {
     "title": "golden gate",
     "useTitle": false,
-    "file": "IMG_3043-Edit-2-Edit.jpg",
+    "file": "IMG_3043-Pano-Edit-2.jpg",
     "date": "2015-01-03T18:57",
     "shutterSpeed": 30,
     "aperture": 10,
     "iso": 400
   },
   {
-    "title": "flower",
+    "title": "blurry gate",
     "useTitle": false,
-    "file": "IMG_0905.jpg",
+    "file": "IMG_0316.jpg",
     "date": "2014-08-05T14:31",
     "shutterSpeed": "1/80",
     "aperture": 5.6,
     "iso": 400
   },
-  {
-    "title": "nightfisher",
-    "useTitle": true,
-    "file": "IMG_2131-Edit.jpg",
-    "date": "2014-08-11T20:33",
-    "shutterSpeed": "1/13",
-    "aperture": 4.5,
-    "iso": 400
+   {
+     "title": "fire day",
+     "useTitle": true,
+     "file": "IMG_5613.jpg",
+     "date": "2014-08-05T14:31",
+     "shutterSpeed": "1/80",
+     "aperture": 5.6,
+     "iso": 400
   },
   {
-    "title": "all we need",
-    "useTitle": true,
-    "file": "IMG_0885.jpg",
-    "date": "2016-06-07T18:02",
-    "shutterSpeed": "1/160",
-    "aperture": 5.6,
-    "iso": 100
+     "title": "fire day",
+     "useTitle": true,
+     "file": "IMG_5634-HDR.jpg",
+     "date": "2014-08-05T14:31",
+     "shutterSpeed": "1/80",
+     "aperture": 5.6,
+     "iso": 400
   },
   {
-    "title": "swirl",
+     "title": "fire day",
+     "useTitle": true,
+     "file": "IMG_5655-HDR.jpg",
+     "date": "2014-08-05T14:31",
+     "shutterSpeed": "1/80",
+     "aperture": 5.6,
+     "iso": 400
+  },
+  {
+     "title": "fire day",
+     "useTitle": true,
+     "file": "IMG_6832.jpg",
+     "date": "2014-08-05T14:31",
+     "shutterSpeed": "1/80",
+     "aperture": 5.6,
+     "iso": 400
+  },
+  {
+    "title": "paul",
     "useTitle": false,
-    "file": "IMG_3610-Edit-2.jpg",
-    "date": "2015-01-09T19:20",
-    "shutterSpeed": 13,
-    "aperture": 3.5,
-    "iso": 1600
-  },
-  {
-    "title": "yellow",
-    "useTitle": false,
-    "file": "IMG_2770.jpg",
+    "file": "IMG_6119.jpg",
     "date": "2017-03-02T15:52",
     "shutterSpeed": "1/50",
     "aperture": 5.6,
     "iso": 400
   },
   {
-    "title": "lens",
+    "title": "gate1",
+    "useTitle": true,
+    "file": "IMG_0319.jpg",
+    "date": "2014-08-11T20:33",
+    "shutterSpeed": "1/13",
+    "aperture": 4.5,
+    "iso": 400
+  },
+  {
+    "title": "becky",
+    "useTitle": true,
+    "file": "IMG_6806.jpg",
+    "date": "2016-06-07T18:02",
+    "shutterSpeed": "1/160",
+    "aperture": 5.6,
+    "iso": 100
+  },
+  {
+    "title": "bca",
     "useTitle": false,
-    "file": "IMG_0838.jpg",
+    "file": "bca.jpg",
+    "date": "2015-01-09T19:20",
+    "shutterSpeed": 13,
+    "aperture": 3.5,
+    "iso": 1600
+  },
+  {
+    "title": "gate box",
+    "useTitle": false,
+    "file": "IMG_8698-Edit.jpg",
     "date": "2016-05-31T01:55",
     "shutterSpeed": "1/8",
     "aperture": 8,
@@ -297,22 +307,12 @@
     "iso": 100
   },
   {
-    "title": "spoon",
+    "title": "vision",
     "useTitle": false,
-    "file": "IMG_0689.jpg",
+    "file": "IMG_2561.jpg",
     "date": "2014-06-01T21:00",
     "shutterSpeed": "1/13",
     "aperture": 2.5,
     "iso": 100
-  },
-
-  {
-     "title": "the sculptor",
-     "useTitle": true,
-     "file": "IMG_1900.jpg",
-     "date": "2014-08-05T14:31",
-     "shutterSpeed": "1/80",
-     "aperture": 5.6,
-     "iso": 400
   }
 ]
