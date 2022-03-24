@@ -1,92 +1,155 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
-    <title>lars.photos</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
-    <link rel="shortcut icon" href="photos/favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<html lang="en">
+	<head>
+		<meta
+			name="viewport"
+			charset="utf-8"
+			content="width=device-width, initial-scale=1"
+		/>
+		<title>lars.pictures</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open Sans Condensed:300"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Rubik"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			media="screen"
+			href="https://fontlibrary.org/face/bebas"
+			type="text/css"
+		/>
+		<link rel="shortcut icon" href="photos/favicon.ico" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
 
-<body>
+	<body>
+		<div class="background"></div>
 
-<div class="background"></div>
+		<header>
+			<div id="brand">lars.pictures</div>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</nav>
+			<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+				<ul class="mobile-menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</div>
+		</header>
 
-<div id="banner" class="opaque-box banner">
-    <p>
-        <h1>
-            lars.pictures
-        </h1>
-    </p>
-</div>
+		<div id="carousel" class="closed">
+			<span class="close cursor" onclick="closeCarousel()">&times;</span>
+			<a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+			<a class="next" onclick="updateSlide(1)">&#10095;</a>
+			<div id="slides" class="carousel-content"></div>
+		</div>
 
-<div class="container smooth"></div>
+		<div id="home" class="home-container">
+			<img
+				id="b1"
+				src="photos/banners/slender-banner.jpg"
+				alt="forest at night"
+			/>
+			<img id="b2" src="photos/banners/clouds-banner.jpg" alt="clouds" />
+			<img
+				id="b3"
+				src="photos/banners/voyage-banner.jpg"
+				alt="ship at sunet"
+			/>
+			<img
+				id="b4"
+				src="photos/banners/unedited-banner.jpg"
+				alt="sunrise"
+			/>
+		</div>
 
-<div id="page"> 
+		<div id="divider-1" class="divider"></div>
 
-    <!-- <div class="site-banner">photogrpahyt by lars mayrand</div> -->
-    
-    <div class="title-position">
-        <div id="title" class="opaque-box title large-text"></div>    
-        <div class="transparent-box"></div>
-        <div id="metadata" class="outline-text metadata small-text"></div>
+		<div id="gallery">
+			<div id="column_0" class="column"></div>
+			<div id="column_1" class="column"></div>
+			<div id="column_2" class="column"></div>
+		</div>
 
-        <!-- <p class="small_text raised">Scroll</p> -->
-        <!-- <a href="#grid-view"class="outline-text medium-text rotate relative">&#8250;</a> -->
-        <button class="outline-text medium-text rotate relative">&#8250;</button>
-        <!-- button should animate scroll to grid view -->
-    </div>
+		<div id="divider-2" class="divider"></div>
 
-    <div class="left-arrow">
-        <button title="previous" class="outline-text medium-text" onclick="previous()">&#8249;</button> 
-        <!-- <p class="small_text">Swipe</p> -->
-    </div>
-    
-    <div class="right-arrow">
-        <button title="next" class="outline-text medium-text" onclick="next()">&#8250;</button>
-        <!-- <p class="small_text">Swipe</p> -->
-    </div>    
-</div>     
+		<div id="about">
+			<div class="about-row">
+				<div class="about-column">
+					<img src="photos/lars-2.jpg" />
+				</div>
+				<div class="about-column">
+					<h1>lars mayrand</h1>
+					i take pictures sometimes<br />
+					Pacifica, CA
+				</div>
+			</div>
+		</div>
 
-<div id="grid-view" class="row">
-    <div id="column_0" class="column"></div>
-    <div id="column_1" class="column"></div>
-    <div id="column_2" class="column"></div>
-</div>
+		<footer>
+			<ul>
+				<li>
+					<a class="drop-shadow" href="mailto:mayrand.lars@Gmail.com">
+						<em class="fa fa-envelope fa-2x"></em>
+					</a>
+				</li>
 
-<footer>
-    <ul> 
-        <li>
-            <a class="drop-shadow" href="mailto:mayrand.lars@Gmail.com">
-                <em class="fa fa-envelope fa-2x"></em>
-            </a>
-        <li>
-            <a id="500px" class="drop-shadow" href="https://500px.com/larsmayrand" target="_blank">
-                <em class="fa fa-500px fa-2x"></em>
-            </a>
-        </li>
-        <li>
-            <a id="github" class="drop-shadow" href="https://github.com/LarsMayrand/lars-pictures" target="_blank">
-                <em class="fa fa-github fa-2x"></em>
-            </a>
-        </li>
-        <li>
-            <a class="drop-shadow" href="https://instagram.com/larsmayrand" target="_blank">
-                <em class="fa fa-instgram fa-2x"></em>
-            </a>
-        </li>
-        <li class="text small-text">
-            <i class="fa fa-copyright" aria-hidden="true"></i>
-            Lars Mayrand 2022
-        </li>
-    </ul>
-</footer>
+				<li>
+					<a
+						id="500px"
+						class="drop-shadow"
+						href="https://500px.com/larsmayrand"
+						target="_blank"
+					>
+						<em class="fa fa-500px fa-2x"></em>
+					</a>
+				</li>
+				<li>
+					<a
+						id="github"
+						class="drop-shadow"
+						href="https://github.com/LarsMayrand/lars-pictures"
+						target="_blank"
+					>
+						<em class="fa fa-github fa-2x"></em>
+					</a>
+				</li>
+				<li>
+					<a
+						class="drop-shadow"
+						href="https://instagram.com/larsmayrand"
+						target="_blank"
+					>
+						<em class="fa fa-instagram fa-2x"></em>
+					</a>
+				</li>
+				<li class="text small-text">
+					<i class="fa fa-copyright" aria-hidden="true"></i>
+					Lars Mayrand 2022
+				</li>
+			</ul>
+		</footer>
 
-<script src="main.js"></script>
-
-</body>
+		<script src="main.js"></script>
+	</body>
 </html>
